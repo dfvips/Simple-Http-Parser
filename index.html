@@ -1,0 +1,30 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Simple HTTP Request Sender By dreamfly</title>
+  <!-- <script src="resources/icon/icon.js"></script>
+  <link rel="icon" type="image/x-icon" href=`${icon}`> -->
+  <link rel="stylesheet" href="resources/css/index.css">
+</head>
+<body>
+  <div class="content">
+    <label for="requestText">HTTP请求文本：</label>
+    <textarea id="requestText" rows="10" cols="80"></textarea>
+    <div class="clearfix">
+      <div class="f-l">
+        <button onclick="sendRequest()">发送请求</button>
+        <button onclick="downloadResult()">下载结果</button>
+      </div>
+      <div id="responseStatus" class="f-r"></div>
+    </div>
+    <textarea id="resText" rows="10" cols="80" readonly class="hidden"></textarea>
+  </div>
+  <p class="clearfix mt-30">本工具仅供测试，请勿用于商业 <br><span>Powered By dreamfly</span></p>
+  <script src="resources/js/jszip.min.js"></script>
+  <script src="resources/js/FileSaver.js"></script>
+  <script src="resources/js/index.js"></script>
+</body>
+</html>
